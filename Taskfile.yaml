@@ -1,0 +1,12 @@
+version: "3"
+
+silent: true
+
+tasks:
+  build:
+    cmds:
+      - docker build -t kazhuravlev/k6:v0.40.0-prometheus-remote .
+  
+  push:
+    cmds:
+      - docker push kazhuravlev/k6:v0.40.0-prometheus-remote
