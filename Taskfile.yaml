@@ -5,8 +5,9 @@ silent: true
 tasks:
   build:
     cmds:
-      - docker build -t kazhuravlev/k6:v0.40.0-prometheus-remote .
+      - docker build -t kazhuravlev/k6:v0.43.1-prometheus-remote -t kazhuravlev/k6:latest .
   
   push:
     cmds:
-      - docker push kazhuravlev/k6:v0.40.0-prometheus-remote
+      - docker push kazhuravlev/k6:v0.43.1-prometheus-remote
+      - docker push kazhuravlev/k6:latest
